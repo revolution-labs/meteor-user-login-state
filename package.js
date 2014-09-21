@@ -8,7 +8,7 @@ Package.describe({
 Package.onUse( function(api) {
     api.versionsFrom("METEOR@0.9.0");
     api.use('accounts-base');
-    api.use(['tracker'], 'client');
+    api.use(['deps'], 'client');
     api.add_files(['client.js'], 'client');
     api.add_files(['server.js'], 'server');
     api.export('UserLoginState');
